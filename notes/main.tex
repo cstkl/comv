@@ -40,14 +40,7 @@
 
 \maketitle
 
-%\begin{figure}[H]
-%\centering
-%\includegraphics[scale=0.4]{SIFT_descriptor.png}
-%\caption{SIFT descriptor.}
-%\label{fig:img2}
-%\end{figure}
-
-\section{introduction, What is camera?}
+\section{Introduction, What is camera?}
 
 \subsection{Describe pinhole projection model}
 Put a piece of film in front of an object and add a barrier to block off most of the rays.
@@ -69,7 +62,7 @@ the distances but we keep the ratio of distances.
 \end{itemize}
 
 \subsection{What are some effects of vanishing projections?}
-The fact of vanishing effect in projects can cause Perspective Distortion.
+The fact of vanishing effect in projects can cause \textbf{Perspective Distortion}.
 
 \begin{figure}[H]
 \centering
@@ -89,7 +82,7 @@ Taking this as context, modelling projection are some equations to know what coo
 in 3D correspond to my object in 2D.
 \[P(x, y, z)^T \rightarrow (f'\frac{x}{z}, f'\frac{y}{z})^T=P'\]
 Where \(P\) is my coordinate in 3D and \(P'\) in 2D. The problem is that this is \textbf{NOT A LINEAR
-TRANSFORMATION}. It meains that is more difficult to compute and manipulate. Homogeneous Coordinates help
+TRANSFORMATION}. It means that is more difficult to compute and manipulate. Homogeneous Coordinates help
 us to solve this and remove the division by \(z\). This is possible adding an extra coordinate with
 value 1.
 
@@ -104,7 +97,6 @@ value 1.
 If our aperture is big we will get a blurred image, however if we decrease the aperture size
 we can remove this blur, however if we continue decreasing the aperture to much, less light gets
 through, then we will get diffraction effects.
-
 
 \subsection{What do we need lens in our cameras?}
 Focus all incoming light  to a point. Rays passing through the center are not deviated. All
@@ -185,20 +177,5 @@ is higher than the dynamic range of the camera, we can get under exposed areas o
     \item \textbf{Color artifacts:} Purple fringing from microlenses, artifacts from Bayer
         patterns. White balance
 \end{itemize}
-
-
-% The pinhole projection model
-% -Cameras with lenses
-% - Qualitative properties
-
-% Perspective projection matrix
-% - Depth of focus
-% - Field of view
-% - Lens aberrations
-
-% Digital cameras
-% - Types of sensors
-% - Color
-
 
 \end{document}
